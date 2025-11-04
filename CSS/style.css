@@ -1,0 +1,65 @@
+/* Main navigation styling */
+nav {
+    background: #003399;
+    color: #FFCC00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container to hold logo and menu */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.logo {
+    margin: 0;
+    padding: 1em 0;
+    font-family: 'Momo Trust Display', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    color: #FFCC00;
+}
+
+/* Menu list styling */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu items */
+.nav-menu li {
+    margin-left: 1em;
+}
+
+/* Menu links */
+.nav-menu li a {
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+    background-color: #FFCC00;
+    color: #1a1a1a;
+}
