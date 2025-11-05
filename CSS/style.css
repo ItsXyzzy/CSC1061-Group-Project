@@ -29,8 +29,8 @@ nav {
     margin: 0;
     padding: 1em 0;
     font-family: 'Momo Trust Display', sans-serif;
-    font-weight: 900;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 1.3em;
     color: #FFCC00;
 }
 
@@ -55,6 +55,7 @@ nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+/* Smooth transition for hover effect */
     transition: all 0.3s ease;
 }
 
@@ -62,4 +63,5 @@ nav {
 .nav-menu li a:hover {
     background-color: #FFCC00;
     color: #1a1a1a;
+    border-radius: 20px;
 }
