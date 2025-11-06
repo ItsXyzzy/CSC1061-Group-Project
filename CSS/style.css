@@ -1,6 +1,11 @@
+/* enabling smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on nav height */
+}
 /* Main navigation styling */
 nav {
-    background: #003399;
+    background: transparent;
     color: #FFCC00;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
@@ -12,8 +17,12 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* Solid background when scrolled */
+nav.scrolled {
+    background: #003399;
+}
 /* Container to hold logo and menu */
 .nav-container {
     display: flex;
@@ -48,20 +57,130 @@ nav {
     margin-left: 1em;
 }
 
-/* Menu links */
+/* Menu links - black by default (before scroll) */
 .nav-menu li a {
     display: block;
-    color: #eee;
+    color: #1a1a1a;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
-/* Smooth transition for hover effect */
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
+/* Menu links - white after scroll */
+nav.scrolled .nav-menu li a {
+    color: #eee;
+}
 /* Hover effect */
 .nav-menu li a:hover {
     background-color: #FFCC00;
     color: #1a1a1a;
     border-radius: 20px;
+}
+
+.page-header {
+    background-image: url('../images/herobg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #eee;
+    padding: 0 0 0 0;
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-header h1 {
+    font-family: 'Momo Trust Display', sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+    margin: 0.2em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.page-header p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0.5em 0 1em 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* button from cssbuttons.io */
+button {
+  font-family: 'Momo Trust Display', sans-serif;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Momo Trust Display', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: #333;
+}
+section p {
+    line-height: 1.6;
+    color: #666;
+    font-size: 1em;
+    max-width: 1200px;
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
+
+/* footer styling */
+footer {
+  background: #039;
+  color: #eee;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.8em;
+
+}
+footer a {
+  color: #FFCC00;
 }

@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Track & Taste</title>
     <link rel ="stylesheet" href="CSS/style.css">
-    <meta name="theme-color" content="#003399">
+    <meta name="theme-color" content="#eee">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header class="page-header">
+        <h1>Welcome to Track & Taste</h1>
+        <p>Your guide to exploring global cuisines and cultures.</p>
+        <a href="#about-section"><button>Explore Now</button></a>
+        </header>
 <nav class="page-nav">
     <div class="nav-container">
         <h2 class="logo">Track & Taste</h2>
@@ -23,7 +29,77 @@
         </ul>
     </div>
 </nav>
+<section class = "home-section">
+        <div id="about-section">
+            <h2>About Us</h2>
+            <p>At Track & Taste, we believe that food is a gateway to understanding cultures and traditions around the world. Our mission is to take you on a culinary journey, exploring diverse cuisines and the stories behind them.</p>
+            <p>Join us as we celebrate the art of cooking and the joy of sharing meals with loved ones.</p>
+        </div>
+    <section class = "home-section">
+        <div id="dest-section">
+            <!--Have a look here for card design: https://inclusive-components.design/cards/-->
+            <h2>Our Destinations</h2>
+            <p>At Track & Taste, we believe that food is a gateway to understanding cultures and traditions around the world. Our mission is to take you on a culinary journey, exploring diverse cuisines and the stories behind them.</p>
+            <p>Join us as we celebrate the art of cooking and the joy of sharing meals with loved ones.</p>
+        </div>
+   </section>
+   <section class = "home-section">
+        <div id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+            </p>
+        </div>
+   </section>
+   <section class = "home-section">
+        <div id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+            </p>
+        </div>
+    <section class = "home-section">
+    <div id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+        </p>
+    </div>
+    <section class = "home-section">
+    <div id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+        </p>
+    </div>
+    <footer id = "footer-layout">
+              <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Craig Dowdall</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+			</p>
+         
+        </footer>
+<script>
+    // Get the navigation element
+    const nav = document.querySelector('nav');
+    
+    // Get the hero section
+    const heroSection = document.querySelector('.page-header');
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', function() {
+        // Get the height of the hero section
+        const heroHeight = heroSection ? heroSection.offsetHeight : 400; // Default to 400px if hero not found
+        
+        // Check if we've scrolled past the hero section
+        if (window.scrollY > heroHeight - 100) { // Subtract 100px for earlier transition
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
-
 </html>
-
