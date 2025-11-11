@@ -12,16 +12,16 @@
 
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header" id="home">
         <h1>Welcome to Track & Taste</h1>
         <p>Your guide to exploring global cuisines and cultures.</p>
-        <a href="#about-section"><button>Explore Now</button></a>
+        <a href="#start"><button>Explore Now</button></a>
         </header>
 <nav class="page-nav">
     <div class="nav-container">
         <h2 class="logo">Track & Taste</h2>
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#">Country 1</a></li>
             <li><a href="#">Country 2</a></li>
             <li><a href="#">Country 3</a></li>
@@ -29,20 +29,27 @@
         </ul>
     </div>
 </nav>
-<section class = "home-section">
-        <div id="about-section">
+<section class = "row-1">
+    <div class="container" id="start">
+        <div class="left-section">
             <h2>About Us</h2>
             <p>At Track & Taste, we believe that food is a gateway to understanding cultures and traditions around the world. Our mission is to take you on a culinary journey, exploring diverse cuisines and the stories behind them.</p>
             <p>Join us as we celebrate the art of cooking and the joy of sharing meals with loved ones.</p>
         </div>
-    <section class = "home-section">
-        <div id="dest-section">
-            <!--Have a look here for card design: https://inclusive-components.design/cards/-->
-            <h2>Our Destinations</h2>
-            <p>At Track & Taste, we believe that food is a gateway to understanding cultures and traditions around the world. Our mission is to take you on a culinary journey, exploring diverse cuisines and the stories behind them.</p>
-            <p>Join us as we celebrate the art of cooking and the joy of sharing meals with loved ones.</p>
+        
+        <div class="left-section">
+    <h2>Our Destinations</h2>
+    <a href="italy.html" class="card">
+        <img src="Images/italy.jpg" alt="Italian Cuisine" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">Italian Cuisine</h3>
+            <p class="card-description">Experience the rich flavors of Italy, from fresh pasta to wood-fired pizzas and gelato.</p>
+            <span class="card-arrow">Explore →</span>
         </div>
-   </section>
+    </a>
+</div>
+    </div>
+</section>
    <section class = "home-section">
         <div id="contact-section">
             <h2>Contact Us</h2>
@@ -63,24 +70,24 @@
         </p>
     </div>
     <section class = "home-section">
-    <div id="contact-section">
-        <h2>Contact Us</h2>
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
-        </p>
-    </div>
+        <div id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+            </p>
+        </div>
+    </section>
     <footer id = "footer-layout">
-              <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text">Craig Dowdall</span> 
-				<span class="footer-separator">&middot;</span> 
-				<span class="footer-text">This is student coursework</span> 
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
-				<span class="footer-separator">&middot;</span> 
-				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
-			</p>
-         
-        </footer>
+        <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text">Craig Dowdall</span> 
+            <span class="footer-separator">&middot;</span> 
+            <span class="footer-text">This is student coursework</span> 
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+            <span class="footer-separator">&middot;</span> 
+            <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+        </p>
+    </footer>
 <script>
     // Get the navigation element
     const nav = document.querySelector('nav');
