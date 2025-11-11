@@ -87,7 +87,7 @@ nav.scrolled .nav-menu li a:hover {
 }
 
 .page-header {
-    background-image: url('../images/herobg.jpg');
+    background-image: url('/Images/herobg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,4 +272,5 @@ footer {
 
 footer a {
   color: #FFCC00;
+
 }
