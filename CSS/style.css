@@ -1,142 +1,146 @@
-/* enabling smooth scrolling for anchor links */
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+/* Enable smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Adjust based on nav height */
+  scroll-padding-top: 80px; /* Offset for fixed navigation */
 }
-/* Main navigation styling */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+/* Main navigation - transparent by default, solid on scroll */
 nav {
-    background: transparent;
-    color: #FFCC00;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  color: #FFCC00;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Container to hold logo and menu */
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Logo styling */
 .logo {
-    margin: 0;
-    padding: 1em 0;
-    font-family: 'Momo Trust Display', sans-serif;
-    font-weight: 400;
-    font-size: 1.3em;
-    color: #FFCC00;
+  margin: 0;
+  padding: 1em 0;
+  font-family: 'Momo Trust Display', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #FFCC00;
 }
 
-/* Menu list styling */
+/* Navigation menu list */
 .nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-/* Menu items */
 .nav-menu li {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
-/* Menu links - black by default (before scroll) */
+/* Menu links - dark before scroll, light after */
 .nav-menu li a {
-    display: block;
-    color: #1a1a1a;
-    text-align: center;
-    padding: 1em 1em;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+  display: block;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-/* Hover effect */
 .nav-menu li a:hover {
-    background-color: #003399;
-    color: #eee;
-    border-radius: 20px;
+  background-color: #003399;
+  color: #eee;
+  border-radius: 20px;
 }
 
-/* Solid background when scrolled */
+/* Scrolled state - solid blue background */
 nav.scrolled {
-    background: #003399;
+  background: #003399;
 }
-/* Menu links - white after scroll */
+
 nav.scrolled .nav-menu li a {
-    color: #eee;
+  color: #eee;
 }
+
 nav.scrolled .nav-menu li a:hover {
-    background-color: #FFCC00;
-    color: #1a1a1a;
-    border-radius: 20px;
+  background-color: #FFCC00;
+  color: #1a1a1a;
+  border-radius: 20px;
 }
+
+/* ============================================
+   HERO HEADER
+   ============================================ */
 
 .page-header {
-    background-image: url('/Images/herobg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: #eee;
-    padding: 0 0 0 0;
-    background-color: #f4f4f4;
-    font-family: 'Open Sans', sans-serif;
-    width: 100dvw;
-    height: 90dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 20px 20px 0 0;
+  background-image: url('../Images/herobg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #eee;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .page-header h1 {
-    font-family: 'Momo Trust Display', sans-serif;
-    font-weight: 400;
-    font-size: 5em;
-    margin: 0.2em 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Momo Trust Display', sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+  margin: 0.2em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .page-header p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0.5em 0 1em 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
-.container {
-    display: flex;
-    gap: 2%; /* replaces your margin */
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0.5em 0 1em 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.right-section {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* or center if you want vertical centering too */
-}
+/* ============================================
+   BUTTONS
+   ============================================ */
 
-.left-section, .right-section {
-    flex: 1; /* or use flex: 1 for equal widths */
-}
-
-
-/* button from cssbuttons.io */
+/* Custom button with hover animation */
 button {
   font-family: 'Momo Trust Display', sans-serif;
   padding: 17px 40px;
@@ -167,36 +171,57 @@ button:active {
   transition: 100ms;
 }
 
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
-    overflow-x: hidden;
+/* ============================================
+   LAYOUT SECTIONS
+   ============================================ */
+
+/* Container for two-column layouts */
+.container {
+  display: flex;
+  gap: 2%;
 }
 
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General section styling */
 section {
-    padding: 4em 2em;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-section h2 {
-    text-align: center;
-    margin-bottom: 1em;
-    font-family: 'Momo Trust Display', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    color: #333;
-}
-section p {
-    line-height: 1.6;
-    color: #666;
-    font-size: 1em;
-    max-width: 1200px;
-    margin: 0 auto 2em auto;
-    text-align: center;
+  padding: 4em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Card Styling */
+section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Momo Trust Display', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #333;
+}
+
+section p {
+  line-height: 1.6;
+  color: #666;
+  font-size: 1em;
+  max-width: 1200px;
+  margin: 0 auto 2em auto;
+  text-align: center;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+/* Destination card styling */
 .card {
   background: white;
   border-radius: 12px;
@@ -207,22 +232,24 @@ section p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
-  display: block;
-  position: center;
   display: inline-block;
-  text-align: left; /* keeps text inside card left-aligned */
+  text-align: left;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 51, 153, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-image {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.05);
 }
 
 .card-content {
@@ -234,6 +261,11 @@ section p {
   font-size: 22px;
   font-weight: 600;
   margin: 0 0 10px 0;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: #FFCC00;
 }
 
 .card-description {
@@ -243,34 +275,71 @@ section p {
   margin: 0;
 }
 
-.card:hover .card-image {
-  transform: scale(1.05);
-}
-
-.card:hover .card-title {
-  color: #FFCC00;
+.card-arrow {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover .card-arrow {
   color: #FFCC00;
   transform: translateX(5px);
-  transition: color 0.3s ease, transform 0.3s ease;
 }
-/* footer styling */
+
+/* ============================================
+   Testimonial Slider
+   ============================================ */
+   .testimonial-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  position: relative;
+}
+
+/* ============================================
+   FAQs
+   ============================================ */
+   
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+details {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Momo Trust Display', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+.faq-section details summary {
+  padding: 1em 1.5em;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+.faq-section p {
+  padding: 0 1.5em 1em 1.5em;
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95em;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
 footer {
   background: #039;
   color: #eee;
   text-align: center;
   padding: 1em 0;
   font-size: 0.8em;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 footer a {
   color: #FFCC00;
-
 }
