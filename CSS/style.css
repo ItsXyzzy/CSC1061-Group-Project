@@ -101,6 +101,154 @@ nav.scrolled .nav-menu li a:hover {
   border-radius: 20px;
 }
 
+/* Mobile menu toggle button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #1a1a1a;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em;
+  z-index: 1001;
+}
+
+nav.scrolled .menu-toggle {
+  color: #eee;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================
+   DROPDOWN STYLES
+   ============================================ */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: ' ▾';
+  font-size: 0.8em;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #003399;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 0.5em 0;
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  color: #eee;
+  padding: 0.8em 1.5em;
+  display: block;
+  text-align: left;
+  font-size: 0.9em;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #FFCC00;
+  color: #1a1a1a;
+  border-radius: 0;
+}
+
+nav.scrolled .dropdown-menu {
+  background: #002266;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: #003399;
+    flex-direction: column;
+    padding: 5em 0 2em 0;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    color: #eee;
+    padding: 1em 1.5em;
+    text-align: left;
+    border-radius: 0;
+  }
+
+  .nav-menu li a:hover {
+    background-color: #FFCC00;
+    color: #1a1a1a;
+    border-radius: 0;
+  }
+
+  /* Mobile dropdown */
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #002266;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-toggle::after {
+    float: right;
+  }
+
+  .dropdown-menu li a {
+    padding: 0.8em 2.5em;
+    font-size: 0.85em;
+  }
+}
+
 /* ============================================
    HERO HEADER
    ============================================ */
@@ -157,16 +305,16 @@ button {
 
 button:hover {
   letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
+  background-color: #003399;
   color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  box-shadow: #002266 0px 7px 29px 0px;
 }
 
 button:active {
   letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
+  background-color: #003399;
   color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  box-shadow: #002266 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
 }
@@ -328,11 +476,68 @@ details {
 }
 
 /* ============================================
+   MAP STYLES
+   ============================================ */
+.map-and-itinerary {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.route-map {
+  text-align: center;
+  margin: 2em 0;
+  max-width: 1200px;
+}
+
+iframe {
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* ============================================
+   TABLE STYLES
+   ============================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  border: 1px solid #003399;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  max-width: 1200px;
+  margin: 0 auto 2em auto;
+}
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table th {
+  background-color: #003399;
+  color: #fff;
+}
+table tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+/* ============================================
+   CALL TO ACTION
+   ============================================ */
+.cta {
+  text-align: center;
+  padding: 3em 1em;
+  background-color: #003399;
+  color: #eee;
+  margin: 2em 0;
+}
+
+/* ============================================
    FOOTER
    ============================================ */
 
 footer {
-  background: #039;
+  background: #003399;
   color: #eee;
   text-align: center;
   padding: 1em 0;

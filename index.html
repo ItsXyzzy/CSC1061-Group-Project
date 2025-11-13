@@ -17,18 +17,59 @@
         <p>Your guide to exploring global cuisines and cultures.</p>
         <a href="#start"><button>Explore Now</button></a>
         </header>
-<nav class="page-nav">
-    <div class="nav-container">
-        <h2 class="logo">Track & Taste</h2>
-        <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#">Country 1</a></li>
-            <li><a href="#">Country 2</a></li>
-            <li><a href="#">Country 3</a></li>
-            <li><a href="#">Country 4</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav class="page-nav">
+        <div class="nav-container">
+            <h2 class="logo">Track & Taste</h2>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">London</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="#">Dropdown 5</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">City 2</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="#">Dropdown 5</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">City 3</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="#">Dropdown 5</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">City 4</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="#">Dropdown 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 <section class = "row-1">
     <div class="container" id="start">
         <div class="left-section">
@@ -49,6 +90,7 @@
 </div>
     </div>
 </section>
+    <div class="clear-floats"></div>
    <section class = "home-section">
         <div id="testimonial-slider">
             <h2>What Our Visitors Say</h2>
@@ -78,19 +120,50 @@
             <p>Yes! We provide step-by-step instructions to help cooks of all skill levels.</p>
         </details>
     </section>
-    <div class = "left-section">
-        <div class = "route-map"> 
-
-        </div>
-    <div class = "right-section">
-        <div class = "itinerary">
-
-        </div>
+    <div class = "map-and-itinerary">
+        <section class = "route-map"> 
+            <h2>Explore Our Sample Travel Route</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d10458902.565404188!2d-3.898540254005371!3d50.20894145346094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!3m2!1d51.5072178!2d-0.12758619999999998!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!3m2!1d48.857547499999995!2d2.3513764999999998!4m5!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!3m2!1d52.3675734!2d4.9041388999999995!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sie!4v1763049677641!5m2!1sen!2sie" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+            <section class="itinerary">
+                    <h2>Sample Itinerary</h2>
+                    <table>
+                            <tr>
+                                    <th>Day</th>
+                                    <th>Location</th>
+                                    <th>Activity</th>
+                            </tr>
+                            <tr>
+                                    <td>Day 1-2</td>
+                                    <td>London</td>
+                                    <td>Explore traditional British cuisine including fish and chips, afternoon tea, and Sunday roast.</td>
+                            </tr>
+                            <tr>
+                                    <td>Day 3-4</td>
+                                    <td>Paris</td>
+                                    <td>Indulge in French delicacies such as croissants, escargot, and coq au vin.</td>
+                            </tr>
+                            <tr>
+                                    <td>Day 5-6</td>
+                                    <td>Amsterdam</td>
+                                    <td>Savor Dutch treats like stroopwafels, herring, and poffertjes.</td>
+                            </tr>
+                            <tr>
+                                    <td>Day 7-8</td>
+                                    <td>Berlin</td>
+                                    <td>Experience German favorites including bratwurst, pretzels, and schnitzel.</td>
+                            </tr>
+                    </table>
+            </section>
+    </div>
+    <div class = "cta">
+        <h2>Ready to see Europe like never before?</h2>
+        <a href="#start"><button>Contact Us</button></a>
     </div>
     <footer id = "footer-layout">
         <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
             <span class="footer-separator">&middot;</span>
-            <span class="footer-text">Craig Dowdall</span> 
+            <span class="footer-text">Craig Dowdall, Ethan Long, Meabh Ferguson, Wasi Nasir and Alejandro Silao</span> 
             <span class="footer-separator">&middot;</span> 
             <span class="footer-text">This is student coursework</span> 
             <span class="footer-separator">&middot;</span>
@@ -118,6 +191,34 @@
             nav.classList.remove('scrolled');
         }
     });
+    // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Mobile dropdown functionality
+        if (window.innerWidth <= 768) {
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                });
+            });
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!nav.contains(e.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.textContent = '☰';
+            }
+        });
 </script>
 </body>
 </html>
