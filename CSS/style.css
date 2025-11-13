@@ -183,7 +183,7 @@ nav.scrolled .dropdown-menu {
 /* ============================================
    MOBILE RESPONSIVE
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .menu-toggle {
     display: block;
   }
@@ -547,4 +547,5 @@ footer {
 
 footer a {
   color: #FFCC00;
+
 }
