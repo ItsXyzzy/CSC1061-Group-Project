@@ -9,23 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body>
     <header class="page-header" id="home">
-        <h1>Welcome to Track & Taste</h1>
-        <p>Your guide to exploring global cuisines and cultures through interrailing.</p>
-        <a href="#start"><button>Explore Now</button></a>
-        </header>
+            <h1>Welcome to Track & Taste</h1>
+            <p>Your guide to exploring global cuisines and cultures through interrailing.</p>
+            <a href="#start"><button>Explore Now</button></a>
+    </header>
+    <body>
     <nav class="page-nav">
         <div class="nav-container">
             <h2 class="logo">Track & Taste</h2>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">London</a>
                     <ul class="dropdown-menu">
@@ -33,10 +30,8 @@
                         <li><a href="#">Dropdown 2</a></li>
                         <li><a href="#">Dropdown 3</a></li>
                         <li><a href="#">Dropdown 4</a></li>
-                        <li><a href="#">Dropdown 5</a></li>
                     </ul>
                 </li>
-                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">City 2</a>
                     <ul class="dropdown-menu">
@@ -44,10 +39,8 @@
                         <li><a href="#">Dropdown 2</a></li>
                         <li><a href="#">Dropdown 3</a></li>
                         <li><a href="#">Dropdown 4</a></li>
-                        <li><a href="#">Dropdown 5</a></li>
                     </ul>
                 </li>
-                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">City 3</a>
                     <ul class="dropdown-menu">
@@ -55,10 +48,8 @@
                         <li><a href="#">Dropdown 2</a></li>
                         <li><a href="#">Dropdown 3</a></li>
                         <li><a href="#">Dropdown 4</a></li>
-                        <li><a href="#">Dropdown 5</a></li>
                     </ul>
                 </li>
-                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">City 4</a>
                     <ul class="dropdown-menu">
@@ -66,6 +57,15 @@
                         <li><a href="#">Dropdown 2</a></li>
                         <li><a href="#">Dropdown 3</a></li>
                         <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="vienna.html" class="dropdown-toggle">Vienna</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="vienna-food.html">Food</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Accomodation</a></li>
+                        <li><a href="#">Getting Around</a></li>
                         <li><a href="#">Dropdown 5</a></li>
                     </ul>
                 </li>
@@ -94,21 +94,24 @@
 </section>
     <div class="clear-floats"></div>
    <section class = "home-section">
-        <div id="testimonial-slider">
+        <div id="testimonials">
             <h2>What Our Visitors Say</h2>
             <div class="testimonial">
+                <img src="Images/testimonial1.jpg" alt="User 1">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget, venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna. Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus libero in risus."</p>
                 <span>- Alex M.</span>
             </div>
             <div class="testimonial">
+                <img src="Images/testimonial2.jpg" alt="User 2">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget, venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna. Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus libero in risus."</p>
                 <span>- Sarah L.</span>
             </div>
         </div>
     </section>
     <section class = "big-numbers-section">
+        <h2>Our Impact in Numbers</h2>
         <div class="big-number">
-            <h2>Over 50 Cities Explored</h2>
+            <h2>5 Cities Explored</h2>
     </div>
     </section>
     <section class = "faq-section">
@@ -135,9 +138,10 @@
         </details>
     </section>
     <div class = "map-and-itinerary">
-        <section class = "route-map"> 
-            <h2>Explore Our Sample Travel Route</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d10458902.565404188!2d-3.898540254005371!3d50.20894145346094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!3m2!1d51.5072178!2d-0.12758619999999998!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!3m2!1d48.857547499999995!2d2.3513764999999998!4m5!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!3m2!1d52.3675734!2d4.9041388999999995!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sie!4v1763049677641!5m2!1sen!2sie" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Explore Our Sample Travel Route</h2>
+        <section class = "map"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d10458902.565404188!2d-3.898540254005371!3d50.20894145346094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!3m2!1d51.5072178!2d-0.12758619999999998!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!3m2!1d48.857547499999995!2d2.3513764999999998!4m5!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!3m2!1d52.3675734!2d4.9041388999999995!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sie!4v1763049677641!5m2!1sen!2sie" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
             <section class="itinerary">
                     <h2>Sample Itinerary</h2>
@@ -186,26 +190,6 @@
             <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
         </p>
     </footer>
-<script>
-    // Get the navigation element
-    const nav = document.querySelector('nav');
-    
-    // Get the hero section
-    const heroSection = document.querySelector('.page-header');
-    
-    // Add scroll event listener
-    window.addEventListener('scroll', function() {
-        // Get the height of the hero section
-        const heroHeight = heroSection ? heroSection.offsetHeight : 400; // Default to 400px if hero not found
-        
-        // Check if we've scrolled past the hero section
-        if (window.scrollY > heroHeight - 100) { // Subtract 100px for earlier transition
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    });
-</script>
+<script src="navbar-scroll.js"></script>
 </body>
-
 </html>
