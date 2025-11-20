@@ -520,7 +520,7 @@ table tr:nth-child(even) {
   text-align: center;
   position: relative;
   overflow: hidden;
-  }
+}
 
 .article-header h1 {
   font-family: 'Momo Trust Display', serif;
@@ -531,7 +531,7 @@ table tr:nth-child(even) {
   position: relative;
   z-index: 1;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-  }
+}
 
 .article-header h2 {
   font-family: 'Open Sans', sans-serif;
@@ -547,21 +547,46 @@ table tr:nth-child(even) {
 .article {
   text-align: center;
 }
+
 .article h3 {
   font-size: 1.5em;
 }
+
 .article h4 {
   font-size: 1.4em;
   color: #666;
   font-style: italic;
 }
+
+.article-content p {
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .article-content {
   border-radius: 5px;
   border-color: #003399;
   border-width: 5px;
 }
-.article-content img{
+
+.article-content img {
+  display: block;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto 1em;
   border: 10px solid #003399;
   border-radius: 5px;
 }
