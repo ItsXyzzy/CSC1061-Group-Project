@@ -202,7 +202,6 @@ nav.scrolled .dropdown-menu {
   margin: 0.5em 0 1em 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
-
 /* ============================================
    BUTTONS
    ============================================ */
@@ -274,16 +273,28 @@ section h2 {
   font-size: 2em;
   color: #333;
 }
+section h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333;
+}
 
 section p {
   line-height: 1.6;
   color: #666;
-  font-size: 1em;
+  font-size: 1.1em;
   max-width: 1200px;
   margin: 0 auto 2em auto;
   text-align: center;
 }
 
+section a {
+  font-family: 'Momo Trust Display', sans-serif;
+  text-align: center;
+}
 /* ============================================
    CARDS
    ============================================ */
@@ -293,7 +304,7 @@ section p {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  max-width: 350px;
+  max-width: 250px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -301,6 +312,7 @@ section p {
   color: inherit;
   display: inline-block;
   text-align: left;
+  margin: 10px;
 }
 
 .card:hover {
@@ -351,14 +363,48 @@ section p {
   transform: translateX(5px);
 }
 
+.continue-cards {
+  background-color: #003399;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
 /* ============================================
-   Testimonial Slider
+   Testimonials
    ============================================ */
-   .testimonial-slider {
+.testimonials {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
   position: relative;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Momo Trust Display', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+
+.testimonial p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================
@@ -402,16 +448,25 @@ details {
   margin: 0 auto;
   text-align: center;
 }
-.route-map {
+.map {
   text-align: center;
   margin: 2em 0;
-  max-width: 1200px;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
 
 iframe {
   border: none;
   border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  padding: 10px;
 }
 /* ============================================
    TABLE STYLES
@@ -420,8 +475,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2em;
-  border: 1px solid #003399;
-  border-radius: 5px;
+  border: 2px solid #003399;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   max-width: 1200px;
@@ -446,11 +500,96 @@ table tr:nth-child(even) {
 .cta {
   text-align: center;
   padding: 3em 1em;
-  background-color: #003399;
+  background-image: url("../Images/cta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
   color: #eee;
   margin: 2em 0;
+  padding: 20px;
+}
+/* ============================================
+   ARTICLES
+   ============================================ */
+.article-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url('https://images.unsplash.com/photo-1526581671404-349f224db79b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+.article-header h1 {
+  font-family: 'Momo Trust Display', serif;
+  font-size: 3.5em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.article-header h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+.article {
+  text-align: center;
+}
+
+.article h3 {
+  font-size: 1.5em;
+}
+
+.article h4 {
+  font-size: 1.4em;
+  color: #666;
+  font-style: italic;
+}
+
+.article-content p {
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-content {
+  border-radius: 5px;
+  border-color: #003399;
+  border-width: 5px;
+}
+
+.article-content img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 1em;
+  border: 10px solid #003399;
+  border-radius: 5px;
+}
 /* ============================================
    FOOTER
    ============================================ */
