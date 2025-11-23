@@ -5,7 +5,8 @@
 /* Enable smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Offset for fixed navigation */
+  scroll-padding-top: 80px;
+  /* Offset for fixed navigation */
 }
 
 body {
@@ -47,13 +48,19 @@ nav {
 }
 
 /* Logo styling */
-.logo {
+.logo a {
   margin: 0;
   padding: 1em 0;
   font-family: 'Momo Trust Display', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
   color: #FFCC00;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #eee;
+  transition: color 0.3s ease;
 }
 
 /* Navigation menu list */
@@ -103,14 +110,6 @@ nav.scrolled .nav-menu li a:hover {
 
 nav.scrolled .menu-toggle {
   color: #eee;
-}
-
-.nav-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
 }
 
 /* ============================================
@@ -169,6 +168,91 @@ nav.scrolled .dropdown-menu {
 }
 
 /* ============================================
+   MOBILE NAVIGATION
+   ============================================ */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFCC00;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: none;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: none;
+  color: #eee;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #003399;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 0;
+    display: none;
+    /* Hidden by default */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    text-align: left;
+    padding: 1em 2em;
+    color: #eee;
+  }
+
+  .nav-menu li a:hover {
+    background-color: #002266;
+    border-radius: 0;
+  }
+
+  /* Adjust dropdowns for mobile */
+  .dropdown-menu {
+    position: static;
+    background: #002266;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 1em;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+    /* Disable hover on mobile */
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+    /* Show on click/tap */
+  }
+
+  .dropdown-toggle::after {
+    float: right;
+  }
+}
+
+/* ============================================
    HERO HEADER
    ============================================ */
 
@@ -202,6 +286,7 @@ nav.scrolled .dropdown-menu {
   margin: 0.5em 0 1em 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+
 /* ============================================
    BUTTONS
    ============================================ */
@@ -241,27 +326,10 @@ button:active {
    LAYOUT SECTIONS
    ============================================ */
 
-/* Container for two-column layouts */
-.container {
-  display: flex;
-  gap: 2%;
-}
-
-.left-section,
-.right-section {
-  flex: 1;
-}
-
-.right-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* General section styling */
 section {
   padding: 4em 2em;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -273,6 +341,7 @@ section h2 {
   font-size: 2em;
   color: #333;
 }
+
 section h3 {
   text-align: center;
   margin-bottom: 1em;
@@ -295,6 +364,7 @@ section a {
   font-family: 'Momo Trust Display', sans-serif;
   text-align: center;
 }
+
 /* ============================================
    CARDS
    ============================================ */
@@ -368,6 +438,7 @@ section a {
   border-radius: 20px;
   margin-bottom: 100px;
 }
+
 /* ============================================
    Testimonials
    ============================================ */
@@ -410,12 +481,13 @@ section a {
 /* ============================================
    FAQs
    ============================================ */
-   
+
 .faq-section {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
 }
+
 details {
   background: #fff;
   border-radius: 8px;
@@ -425,12 +497,14 @@ details {
   font-weight: 400;
   font-size: 1em;
 }
+
 .faq-section details summary {
   padding: 1em 1.5em;
   cursor: pointer;
   position: relative;
   list-style: none;
 }
+
 .faq-section p {
   padding: 0 1.5em 1em 1.5em;
   margin: 0;
@@ -448,26 +522,28 @@ details {
   margin: 0 auto;
   text-align: center;
 }
+
 .map {
   text-align: center;
   margin: 2em 0;
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
 iframe {
   border: none;
   border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   padding: 10px;
 }
+
 /* ============================================
    TABLE STYLES
    ============================================ */
@@ -481,15 +557,19 @@ table {
   max-width: 1200px;
   margin: 0 auto 2em auto;
 }
-table th, table td {
+
+table th,
+table td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
 table th {
   background-color: #003399;
   color: #fff;
 }
+
 table tr:nth-child(even) {
   background-color: #e6e6e6;
 }
@@ -498,6 +578,7 @@ table tr:nth-child(even) {
    CALL TO ACTION
    ============================================ */
 .cta {
+  max-width: 1400px;
   text-align: center;
   padding: 3em 1em;
   background-image: url("../Images/cta.jpg");
@@ -509,17 +590,31 @@ table tr:nth-child(even) {
   margin: 2em 0;
   padding: 20px;
 }
+
 /* ============================================
    ARTICLES
    ============================================ */
 .article-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url('https://images.unsplash.com/photo-1526581671404-349f224db79b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+
   color: white;
   padding: 60px 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.article-header.vienna {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url("../Images/vienna.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.article-header.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url("../Images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .article-header h1 {
@@ -530,7 +625,7 @@ table tr:nth-child(even) {
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .article-header h2 {
@@ -542,8 +637,9 @@ table tr:nth-child(even) {
   position: relative;
   z-index: 1;
   opacity: 0.95;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  }
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
 .article {
   text-align: center;
 }
@@ -564,7 +660,7 @@ table tr:nth-child(even) {
 }
 
 .article-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 2em auto;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
@@ -574,22 +670,56 @@ table tr:nth-child(even) {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: #003399;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
 }
 
 .article-content {
   border-radius: 5px;
   border-color: #003399;
-  border-width: 5px;
+  border-width: 10px;
 }
 
 .article-content img {
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto 1em;
   border: 10px solid #003399;
   border-radius: 5px;
 }
+
+.article-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 1.5em;
+}
+
+.article-content ul li {
+  margin-bottom: 0.5em;
+}
+
+.article-content a {
+  color: #003399;
+  text-decoration: underline;
+}
+
+.article-content a:hover {
+  color: #FFCC00;
+  transition: 0.3s;
+}
+
+.next-steps {
+  text-align: center;
+  margin: 3em 0;
+  background-color: #FFCC00;
+  padding: 20px;
+  border-radius: 8px;
+  color: #003399;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -605,4 +735,34 @@ footer {
 
 footer a {
   color: #FFCC00;
+}
+
+/*Form Styles*/
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  text-align: center
 }
