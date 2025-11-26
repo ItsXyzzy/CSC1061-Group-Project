@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +8,11 @@
     <meta name="theme-color" content="#eee">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#003399">
+    <link rel="icon" type="image/png" href="favicon.ico">
 </head>
-
 <body>
-    <header class="page-header" id="home">
-        <h1>Welcome to Track & Taste</h1>
-        <p>Your guide to exploring global cuisines and cultures through interrailing.</p>
-        <a href="#start"><button>Explore Now</button></a>
-    </header>
     <nav class="page-nav">
         <div class="nav-container">
             <h2 class="logo"><a href="index.html">Track & Taste</a></h2>
@@ -29,42 +21,47 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Great Britain</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="gbindex.html">Overview</a></li>
+                        <li><a href="gbhistory.html">History</a></li>
+                        <li><a href="gbculture.html">Culture</a></li>
+                        <li><a href="gbfood.html">Food</a></li>
+                        <li><a href="gbaccommodation.html">Accommodation</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Poland</a>
+                    <a href="#" class="dropdown-toggle nav-active main">Poland</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="poland_food.html">Food & Cuisine</a></li>
+                        <li><a href="poland_culture.html">Culture & History</a></li>
+                        <li><a href="poland_entertainment.html">Entertainment & Arts</a></li>
+                        <li><a href="poland_costs.html">Cost & Budget</a></li>
+                        <li><a href="poland_nature.html">Nature & Outdoors</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Madrid</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="madrid-food.html">Food</a></li>
+                        <li><a href="madrid-culture.html">Culture</a></li>
+                        <li><a href="madrid-accommodation.html">Accommodation</a></li>
+                        <li><a href="madrid-attractions.html">Attractions</a></li>
+                        <li><a href="madrid-history.html">History</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Paris</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="paris.html">Overview</a></li>
+                        <li><a href="paris-food.html">Food</a></li>
+                        <li><a href="paris-destinations.html">Destinations</a></li>
+                        <li><a href="paris-shop.html">Shopping</a></li>
+                        <li><a href="paris-events.html">Events</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="vienna.html" class="dropdown-toggle">Vienna</a>
+                    <a href="#" class="dropdown-toggle">Vienna</a>
                     <ul class="dropdown-menu">
+                        <li><a href="vienna.html">Overview</a></li>
                         <li><a href="vienna-food.html">Food</a></li>
                         <li><a href="vienna-history.html">History</a></li>
                         <li><a href="vienna-todo.html">What to do</a></li>
@@ -74,45 +71,67 @@
             </ul>
         </div>
     </nav>
+    <header class="page-header" id="home">
+        <h1>Welcome to Track & Taste</h1>
+        <p>Your guide to exploring European cuisines and cultures through interrailing.</p>
+        <a href="#start"><button>Explore Now</button></a>
+    </header>
     <section class="about" id="start">
-        <h2>About Us</h2>
-        <p>At Track & Taste, we believe that interrailing is a unique way to explore the diverse cultures and cuisines
-            of Europe.</p>
-        <p>Join us as journey through Europe with Food, History, and Culture in mind.</p>
+        <h2>Why Interrail?</h2>
+        <div class="features-grid">
+            
+            <div class="feature-item">
+                <div class="feature-icon">🌿</div>
+                <h3>Eco-Friendly</h3>
+                <p>See Europe with a lower carbon footprint. Train travel is one of the greenest ways to explore.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🗺️</div>
+                <h3>Freedom</h3>
+                <p>Hop on and off wherever you please. Your pass gives you the flexibility to change plans on a whim.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🏛️</div>
+                <h3>Culture</h3>
+                <p>Immerse yourself in local traditions. From food to history, experience the authentic heart of Europe.
+                </p>
+            </div>
+        </div>
     </section>
     <section class="featured-articles">
         <div class="article-card">
-            <h3>Learn more about our reviewed destinations</h3>
+            <h2>Learn more about our reviewed destinations</h2>
             <section class="continue-cards" id="home">
                 <a href="#" class="card">
-                    <img src="Images/Vienna/vienna-food.jpg" alt="Vienna Food" class="card-image">
+                    <img src="Images/london.jpg" alt="London" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Great Britain</h3>
-                        <p class="card-description">###</p>
-                        <span class="card-arrow">Explore →</span>
-                    </div>
-                </a>
-                <a href="vienna-history.html" class="card">
-                    <img src="Images/Vienna/vienna-hist.jpg" alt="Vienna History" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Poland</h3>
-                        <p class="card-description">###</p>
+                        <p class="card-description">Explore the UK, one of Europe's most diverse and historic countries.</p>
                         <span class="card-arrow">Explore →</span>
                     </div>
                 </a>
                 <a href="#" class="card">
-                    <img src="Images/Vienna/vienna-accom.jpg" alt="Madrid" class="card-image">
+                    <img src="Images/Poland.jpg" alt="Poland" class="card-image">
                     <div class="card-content">
-                        <h3 class="card-title">Madrid</h3>
-                        <p class="card-description">###</p>
+                        <h3 class="card-title">Poland</h3>
+                        <p class="card-description">Discover Poland, a country rich in history and vibrant culture.</p>
                         <span class="card-arrow">Explore →</span>
                     </div>
                 </a>
-                <a href="vienna-getting-around.html" class="card">
-                    <img src="Images/vienna.jpg" alt="Vienna" class="card-image">
+                <a href="#" class="card">
+                    <img src="Images/Madrid.jpg" alt="Madrid" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Madrid</h3>
+                        <p class="card-description">Visit Spain, a country known for its vibrant culture and historic cities.</p>
+                        <span class="card-arrow">Explore →</span>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Images/Paris.jpg" alt="Paris" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Paris</h3>
-                        <p class="card-description">###</p>
+                        <p class="card-description">See France, a country famous for its art, fashion, and culinary delights.</p>
                         <span class="card-arrow">Explore →</span>
                     </div>
                 </a>
@@ -120,152 +139,145 @@
                     <img src="Images/vienna.jpg" alt="Vienna" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Vienna</h3>
-                        <p class="card-description">###</p>
+                        <p class="card-description">Experience Austria, a country known for its classical music heritage and stunning architecture.</p>
                         <span class="card-arrow">Explore →</span>
                     </div>
                 </a>
             </section>
         </div>
-        </div>
     </section>
-    <div class="clear-floats"></div>
+    <section class="itinerary">
+        <div class="map-and-itinerary">
+            <h2>Sample Itinerary: Grand European Adventure</h2>
+            <p>Here's our two week adventure tour to see all of europe by train. Be warned, a journey like this isn't for the faint of heart.</p>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Rail Journey Details</th>
+                </tr>
+                <tr>
+                    <td>Day 1-3</td>
+                    <td>London</td>
+                    <td>Great Britain</td>
+                    <td>See the sights of Great Britain before setting off</td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>London</td>
+                    <td>Madrid</td>
+                    <td>Eurostar to Paris and TGV/AVE high-speed train to Madrid</td>
+                </tr>
+                <tr>
+                    <td>Day 5-6</td>
+                    <td>Madrid</td>
+                    <td>Madrid</td>
+                    <td><i>Stay in Madrid</i></td>
+                </tr>
+                <tr>
+                    <td>Day 7-8</td>
+                    <td>Madrid</td>
+                    <td>Paris</td>
+                    <td>AVE/TGV high-speed train</td>
+                </tr>
+                <tr>
+                    <td>Day 8-9</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td><i>Stay in Paris</i></td>
+                </tr>
+                <tr>
+                    <td>Day 9-10</td>
+                    <td>Paris</td>
+                    <td>Vienna</td>
+                    <td>ÖBB Nightjet sleeper train</td>
+                </tr>
+                <tr>
+                    <td>Day 10-11</td>
+                    <td>Vienna</td>
+                    <td>Vienna</td>
+                    <td><i>Stay in Vienna</i></td>
+                </tr>
+                <tr>
+                    <td>Day 12</td>
+                    <td>Vienna</td>
+                    <td>Krakow</td>
+                    <td>OBB Railjet or EuroCity</td>
+                </tr>
+                <tr>
+                    <td>Day 13-14</td>
+                    <td>Krakow</td>
+                    <td>Krakow</td>
+                    <td><i>Stay in Krakow</i></td>
+                </tr>
+            </table>
+    </section>
+    </div> 
     <section class="home-section">
         <div id="testimonials">
             <h2>What Our Visitors Say</h2>
             <div class="testimonial">
                 <img src="Images/testimonial1.jpg" alt="User 1">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                    venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                    condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                    Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent
-                    dapibus dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu
-                    vehicula ex risus sit amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat
-                    est, a mollis risus libero in risus."</p>
-                <span>- Alex M.</span>
+                <br><p>"The speed and efficiency of the rail system on this Grand Adventure was astonishing. Day 4, the high-speed journey from Paris to Madrid, felt long on paper, but flying across France and into Spain while relaxing in a spacious seat made it an event in itself. No airport security, no transfers far outside the city. We went from the heart of Paris to the center of Madrid and later from Vienna to Krakow with total ease. This trip truly proved that European rail is the only way to cover vast distances without losing a single moment of city life."</p><br>
+                <span>- Alex M. London, UK</span>
             </div>
             <div class="testimonial">
                 <img src="Images/testimonial2.jpg" alt="User 2">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                    venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                    condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                    Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent
-                    dapibus dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu
-                    vehicula ex risus sit amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat
-                    est, a mollis risus libero in risus."</p>
-                <span>- Sarah L.</span>
+                <br><p>"The decision to take the overnight Nightjet from Paris to Vienna was brilliant! It saved us a full day of travel and an entire night of accommodation. We had dinner in France, woke up refreshed in Vienna, and were checking into our hotel by 9 AM. The logistics of the trip, especially linking the western hub of Madrid with the eastern charm of Krakow, seemed daunting, but the suggested sequence made the journey feel logical and relaxing. It was two weeks of seeing incredible sights without ever feeling rushed by the travel itself."</p><br>
+                <span>- Sarah L. New York, USA</span>
+            </div>
+            <div class="testimonial">
+                <img src="Images/testimonial3.jpg" alt="User 3">
+                <br><p>"What I loved most about this itinerary was the incredible cultural contrast. Starting in Great Britain, moving through the romance of Paris, the energy of Madrid, the Imperial grandeur of Vienna, and finally the historic soul of Krakow—it felt like five completely different holidays rolled into one seamless adventure. The route design meant that every new city felt like a grand discovery, connected not by stress, but by comfortable, scenic train travel. This website’s planning was the backbone of an unforgettable European adventure."</p><br>
+                <span>- David S. Sydney, Australia</span>
             </div>
         </div>
-    </section>
-    <section class="big-numbers-section">
-        <h2>Our Impact in Numbers</h2>
-        <div class="big-number">
-            <h2>5 Cities Explored</h2>
         </div>
     </section>
+    </div> 
     <section class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <details>
-            <summary>FAQ1</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus
-                dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit
-                amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus
-                libero in risus.</p>
+            <summary>Do I need to book my train tickets/reservations far in advance?</summary>
+            <p>For most high-speed trains (like TGV, Thalys, or Eurostar) and international/night trains, it is highly recommended to book your tickets and seat reservations as far in advance as possible (often up to 3-6 months ahead). This is essential to secure the lowest fares and guarantee a seat. For local or regional trains, booking on the day or shortly before is generally fine.</p>
         </details>
         <details>
-            <summary>FAQ 2</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus
-                dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit
-                amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus
-                libero in risus.</p>
+            <summary>Should I buy individual tickets or a rail pass (like Eurail/Interrail)?</summary>
+            <p>This depends on your itinerary. A rail pass is usually best if you plan on traveling to many different countries or taking several long-distance journeys within a short period, offering great flexibility. Individual tickets are often cheaper if you are only visiting one or two countries, have a fixed schedule, and book far in advance. Use our route planner tools to compare the total cost for your specific journey!</p>
         </details>
         <details>
-            <summary>FAQ 3</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus
-                dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit
-                amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus
-                libero in risus.</p>
+            <summary>Is there a baggage limit on European trains?</summary>
+            <p>Generally, no. One of the great advantages of rail travel is the lack of strict weight limits or extra fees for luggage, unlike flying. However, you must be able to lift and manage your own bags onto the train and store them in the overhead racks or designated luggage areas near your seat. We recommend bringing bags you can easily carry yourself.</p>
         </details>
         <details>
-            <summary>FAQ 4</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus
-                dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit
-                amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus
-                libero in risus.</p>
+            <summary>Where can I store my luggage at the main European train stations?</summary>
+            <p>Most major train stations across Europe offer luggage storage facilities, either in the form of secured lockers or a manned "Left Luggage" office. This is very convenient for day trips or exploring a city before checking into your accommodation. We recommend checking the station's official website in advance for specific locations, operating hours, and costs..</p>
         </details>
         <details>
-            <summary>FAQ 5</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex augue, congue et finibus eget,
-                venenatis vitae ipsum. Praesent at enim vestibulum, dictum lorem suscipit, lacinia eros. Donec
-                condimentum, magna a mollis placerat, ipsum tellus venenatis odio, a commodo orci justo non urna.
-                Curabitur nibh nisl, pharetra ac commodo ac, aliquet at augue. Sed at imperdiet leo. Praesent dapibus
-                dictum ipsum sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia curae; Fusce euismod, diam a congue malesuada, diam quam gravida est, eu vehicula ex risus sit
-                amet lorem. Integer eleifend, diam vitae accumsan sodales, nulla massa feugiat est, a mollis risus
-                libero in risus.</p>
+            <summary>Are the long travel days (e.g. Paris to Madrid or Vienna to Krakow) manageable, and how can I maximize comfort?</summary>
+            <p>While there are a few full-day high-speed journeys on this route (approximately 8-10 hours), they are highly manageable and part of the adventure! The key is preparation.</p>
+            <ul>
+                <li>Choose comfortable seating options<p>For these long legs, investing in a 1st Class ticket often provides wider seats, more legroom, quieter carriages, and sometimes complimentary amenities, making the journey feel much shorter.</p></li>
+                <li>Utilize Night Trains<p>We highly recommend using the overnight services (like the ÖBB Nightjet) for routes such as Paris to Vienna. This saves you a day of travel time and a night of hotel costs. You also wake up in your destination with a full day for activities.</p></li>
+                <li>Stay Connected<p>Pack power banks, download movies/podcasts, and ensure you have snacks and drinks. Most modern high-speed trains offer reliable Wi-Fi and power outlets, allowing you to work, relax, or simply watch the diverse European landscapes change outside your window.</p></li>
+            </ul>
         </details>
     </section>
     <div class="map-and-itinerary">
         <h2>Explore Our Sample Travel Route</h2>
         <section class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d10458902.565404188!2d-3.898540254005371!3d50.20894145346094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!3m2!1d51.5072178!2d-0.12758619999999998!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!3m2!1d48.857547499999995!2d2.3513764999999998!4m5!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!3m2!1d52.3675734!2d4.9041388999999995!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sie!4v1763049677641!5m2!1sen!2sie"
+                src="https://www.google.com/maps/d/embed?mid=1TtOB7Ua0JQ5x2twH29BM82XZLCCZ8Ek&ehbc=2E312F"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="itinerary">
-            <h2>Sample Itinerary</h2>
-            <table>
-                <tr>
-                    <th>Day</th>
-                    <th>Location</th>
-                    <th>Activity</th>
-                </tr>
-                <tr>
-                    <td>Day 1-2</td>
-                    <td>London</td>
-                    <td>Explore traditional British cuisine including fish and chips, afternoon tea, and Sunday roast.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Day 3-4</td>
-                    <td>Paris</td>
-                    <td>Indulge in French delicacies such as croissants, escargot, and coq au vin.</td>
-                </tr>
-                <tr>
-                    <td>Day 5-6</td>
-                    <td>Amsterdam</td>
-                    <td>Savor Dutch treats like stroopwafels, herring, and poffertjes.</td>
-                </tr>
-                <tr>
-                    <td>Day 7-8</td>
-                    <td>Berlin</td>
-                    <td>Experience German favorites including bratwurst, pretzels, and schnitzel.</td>
-                </tr>
-            </table>
-        </section>
     </div>
-    <section class="cta">
+        
+    <div class="next-steps">
         <h2>Ready to see Europe like never before?</h2>
-        <a href="#start"><button>Contact Us</button></a>
-    </section>
+        <a href="contact.html"><button>Contact Us</button></a>
+    </div>
     <footer id="footer-layout">
         <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
             <span class="footer-separator">&middot;</span>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,10 @@
     <meta name="theme-color" content="#eee">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#003399">
     <link rel="icon" type="image/png" href="favicon.ico">
 </head>
-
 <body>
     <nav class="page-nav">
         <div class="nav-container">
@@ -22,44 +19,49 @@
             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-menu">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">London</a>
+                    <a href="#" class="dropdown-toggle">Great Britain</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="gbindex.html">Overview</a></li>
+                        <li><a href="gbhistory.html">History</a></li>
+                        <li><a href="gbculture.html">Culture</a></li>
+                        <li><a href="gbfood.html">Food</a></li>
+                        <li><a href="gbaccommodation.html">Accommodation</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">City 2</a>
+                    <a href="#" class="dropdown-toggle nav-active main">Poland</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="poland_food.html">Food & Cuisine</a></li>
+                        <li><a href="poland_culture.html">Culture & History</a></li>
+                        <li><a href="poland_entertainment.html">Entertainment & Arts</a></li>
+                        <li><a href="poland_costs.html">Cost & Budget</a></li>
+                        <li><a href="poland_nature.html">Nature & Outdoors</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">City 3</a>
+                    <a href="#" class="dropdown-toggle">Madrid</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="madrid-food.html">Food</a></li>
+                        <li><a href="madrid-culture.html">Culture</a></li>
+                        <li><a href="madrid-accommodation.html">Accommodation</a></li>
+                        <li><a href="madrid-attractions.html">Attractions</a></li>
+                        <li><a href="madrid-history.html">History</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">City 4</a>
+                    <a href="#" class="dropdown-toggle">Paris</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="paris.html">Overview</a></li>
+                        <li><a href="paris-food.html">Food</a></li>
+                        <li><a href="paris-destinations.html">Destinations</a></li>
+                        <li><a href="paris-shop.html">Shopping</a></li>
+                        <li><a href="paris-events.html">Events</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="vienna.html" class="dropdown-toggle">Vienna</a>
+                    <a href="#" class="dropdown-toggle">Vienna</a>
                     <ul class="dropdown-menu">
+                        <li><a href="vienna.html">Overview</a></li>
                         <li><a href="vienna-food.html">Food</a></li>
                         <li><a href="vienna-history.html">History</a></li>
                         <li><a href="vienna-todo.html">What to do</a></li>
@@ -74,7 +76,28 @@
         <h2>If you have any questions, suggestions, or would like to share your own travel experiences, feel free to
             reach out to us!</h2>
     </header>
-
+        <section class="about" id="start">
+            <h2>Our Contact Information</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🏢</div>
+                <h3>Office</h3>
+                <p>123 Main Street, Dublin, Ireland</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📞</div>
+                <h3>Phone Number</h3>
+                <p>123-456-7890</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📧</div>
+                <h3>Email</h3>
+                <p>contact@trackandtaste.com</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="contact-heading">Send Us a Message</h2>
+    <div class="contact-form">
     <form action="https://formspree.io/f/xldvwqlp" method="POST">
         <label>
             Your name:
@@ -88,10 +111,10 @@
             Your message:
             <textarea name="message"></textarea>
         </label>
-    </form>
-    <!-- your other form fields go here -->
+            <!-- your other form fields go here -->
     <button type="submit">Send</button>
     </form>
+    </div>
     <footer id="footer-layout">
         <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
             <span class="footer-separator">&middot;</span>
