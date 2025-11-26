@@ -906,3 +906,78 @@ form button {
     flex-direction: column;
   }
 }
+/* ============================================
+   Paris
+============================================ */
+.article-header.paris{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url('https://worldinparis.com/wp-content/uploads/2022/01/View-from-the-Pantheon.jpg') center/cover;
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.paris {
+  width: 250px;
+}
+
+.card-arrow.paris {
+  color: #ed493e;
+}
+
+.split-box {
+  display: flex;
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 100px auto;
+}
+
+.split-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-box__text {
+  width: 50%;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.split-box ul {
+  color: #666;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.split-box__image {
+  width: 50%;
+  display: flex;
+}
+
+.split-box__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+/* ============================================
+   Vienna
+============================================ */
+.card.vienna {
+  width: 250px;
+}
+
+.card-arrow.vienna {
+  color: #EF3340;
+}
+.card-title.vienna {
+  color: #EF3340;
+}
